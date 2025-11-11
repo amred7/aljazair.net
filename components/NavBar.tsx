@@ -10,6 +10,7 @@ const NavBar = () => {
         <Link href="/">JavaScript</Link> 
         <Link href="/">Python</Link>
       </nav>
+
     </div>
   );
 };
