@@ -30,6 +30,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "amplify/auth/resource.ts", "amplify/storage/resource.ts"  ],
   "exclude": ["node_modules"]
 }
