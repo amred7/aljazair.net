@@ -1,3 +1,65 @@
 {
+  "auth": {
+    "user_pool_id": "ca-central-1_Uz8rLAYWr",
+    "aws_region": "ca-central-1",
+    "user_pool_client_id": "34k647koahpiu35s76182efg3v",
+    "identity_pool_id": "ca-central-1:fc2dca7b-a950-458e-96ee-02081ef8767a",
+    "mfa_methods": [],
+    "standard_required_attributes": [
+      "email",
+      "family_name"
+    ],
+    "username_attributes": [
+      "email"
+    ],
+    "user_verification_types": [
+      "email"
+    ],
+    "groups": [],
+    "mfa_configuration": "NONE",
+    "password_policy": {
+      "min_length": 8,
+      "require_lowercase": true,
+      "require_numbers": true,
+      "require_symbols": true,
+      "require_uppercase": true
+    },
+    "unauthenticated_identities_enabled": true
+  },
+  "storage": {
+    "aws_region": "ca-central-1",
+    "bucket_name": "amplify-aljazairnet-reda-sandb-filesbucket23e7585d-sxkjp1xr4euy",
+    "buckets": [
+      {
+        "name": "files",
+        "bucket_name": "amplify-aljazairnet-reda-sandb-filesbucket23e7585d-sxkjp1xr4euy",
+        "aws_region": "ca-central-1",
+        "paths": {
+          "uploads/*": {
+            "authenticated": [
+              "get",
+              "list",
+              "write"
+            ],
+            "guest": [
+              "get",
+              "list"
+            ]
+          },
+          "public/*": {
+            "authenticated": [
+              "get",
+              "list",
+              "write"
+            ],
+            "guest": [
+              "get",
+              "list"
+            ]
+          }
+        }
+      }
+    ]
+  },
   "version": "1.4"
 }
